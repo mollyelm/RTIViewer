@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OpenLime</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHdpZHRoPSI2MnB4IgogICBoZWlnaHQ9IjYycHgiCiAgIHZpZXdCb3g9IjAgMCA2MiA2MiIKICAgdmVyc2lvbj0iMS4xIj4KICA8Y2lyY2xlCiAgICAgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIgogICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDojZmFjZDVhO2ZpbGwtb3BhY2l0eToxIgogICAgIGN4PSI0My44NDA2MjIiCiAgICAgY3k9IjAiCiAgICAgcj0iMjguODgxNjk3IiAvPgogIDxwYXRoCiAgICAgZD0ibSAzOC4zOTk2OTUsMjcuMDUxODA5IC03LjkzNjQzNiwtNC42MTIwMjIgLTEuMjY1OTc2LC0xLjI2NTk3NiAtOC4wOTgzOTUsLTguMDk4Mzk1IC0yLjk1NzIzNCwtMi45NTcyMzQgYyAtMC43MDEzNTEsLTAuNzAxMzUwNSAtMS44MzA1OTcsLTAuNzAxMzU0IC0yLjUzMTk0OCwtMmUtNiBsIC01LjA1MzM4Niw1LjA1MzM4NiBjIC0wLjcwMTM1MjYsMC43MDEzNTIgLTAuNzAxMzQ5LDEuODMwNTk4IDNlLTYsMi41MzE5NDggbCAyLjk1NzIzMywyLjk1NzIzNSA4LjA5ODM5NSw4LjA5ODM5NSAxLjI2NTk3NSwxLjI2NTk3NSA0LjYxMjAyMiw3LjkzNjQzNyA1LjY3NDYzLDUuNjc0NjMxIDEwLjkwOTc0OCwtMTAuOTA5NzQ3IHoiCiAgICAgc3R5bGU9ImZpbGw6IzVmODJjMzsiLz4KICA8cGF0aCBkPSJtIDM4LjM5OTY5MiwyNy4wNTE4MTIgMi4yODEwNjksMi4yODEwNyAtMTAuOTA5NzQ0LDEwLjkwOTc0NCAtMi4yODEwNjksLTIuMjgxMDcgeiIKICAgICBzdHlsZT0iZmlsbDojNDE1YTg3OyIvPgogIDxjaXJjbGUKICAgICB0cmFuc2Zvcm09InJvdGF0ZSg0NSkiCiAgICAgcj0iMS43MTg0MjI4IgogICAgIGN5PSItMC4zMDk4MDYyOSIKICAgICBjeD0iMzYuOTc3MjI2IgogICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjAuMjQ3NDc0NzYiLz4KICA8cGF0aAogICAgIGQ9Ik0gNTkuMDUzMDkyLDM3LjIwOTcgNDMuMTc3MjMsMzMuNjIzMjI1IDMzLjkwODMwMSw0Mi44OTIxNTMgYyAwLDAgMS45ODAxNjIsOS4yMjExNiAzLjQ0NjE1OSwxNi4xMDA5NTIgQSAyOC44ODE2OTcsMjguODgxNjk3IDAgMCAwIDUxLjMwNDI1OSw1MS4zMDQxOTkgMjguODgxNjk3LDI4Ljg4MTY5NyAwIDAgMCA1OS4wNTMwOTIsMzcuMjA5NyBaIgogICAgIHN0eWxlPSJmaWxsOiNmY2UwOTQ7Ii8+CiAgPHBhdGgKICAgICBkPSJtIDU2Ljc4NTczOCw0My41NzQwMDMgLTE0Ljk1OTA1NCwtOC42MDAyMzIgLTYuNDE0NzMsNi40MTQ3MyA4LjczMzI0MSwxNS4xMzczNzMgYSAyOC44ODE2OTcsMjguODgxNjk3IDAgMCAwIDcuMTU5MDY0LC01LjIyMTY3NSAyOC44ODE2OTcsMjguODgxNjk3IDAgMCAwIDUuNDgxNDc5LC03LjczMDE5NiB6IgogICAgIHN0eWxlPSJmaWxsOiNmZWY5ZDQ7Ii8+Cjwvc3ZnPgo=">
+		<link rel="stylesheet" href="openlime/skin.css"/>
+
+		<style>
+		html, body {
+			margin: 0px;
+			padding: 0px;
+			height: 100%;
+		}
+
+		#openlime {
+			position:relative;
+			height: 100%
+		}
+
+		#openlime>canvas {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		#error {
+			color: red;
+			background: white;
+			padding: 20px;
+			font-family: Arial, sans-serif;
+			display: none;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="error"></div>
+		<div id="openlime"></div>
+	</body>
+		
+	<script src="openlime/openlime.min.js"></script>
+	<script>
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		}
+
+		const dataset = getUrlParameter('dataset');
+		if (!dataset) {
+			document.getElementById('error').style.display = 'block';
+			document.getElementById('error').innerText = 'Error: Missing dataset parameter';
+			document.getElementById('openlime').style.display = 'none';
+		}
+
+		async function autodetect() {
+			const basePath = 'rti_files/' + dataset;
+			
+			let response = await fetch(basePath + '/plane_0.tzi');
+			if(response.status == 200)
+				return "tarzoom";
+
+			response = await fetch(basePath + '/plane_0.dzi');
+			if(response.status == 200)
+				return "deepzoom";
+
+			response = await fetch(basePath + '/planes.tzi');
+			if(response.status == 200)
+				return "itarzoom";
+
+			response = await fetch(basePath + '/plane_0.jpg');
+			if(response.status == 200)
+				return "image";
+
+			document.getElementById('error').style.display = 'block';
+			document.getElementById('error').innerText = 'Error: Could not detect RTI format in "' + dataset + '"';
+			return "";
+		}
+
+		async function autodetectNormals(layout) {
+			const basePath = 'rti_files/' + dataset;
+			
+			if(layout == 'tarzoom') {
+				let response = await fetch(basePath + '/normals.tzi');
+				if(response.status == 200)
+					return true;
+			}
+			if(layout == 'deepzoom') {
+				let response = await fetch(basePath + '/normals.dzi');
+				if(response.status == 200)
+					return true;
+			}
+			if(layout == 'image') {
+				let response = await fetch(basePath + '/normals.jpg');
+				if(response.status == 200)
+					return true;
+			}
+
+			return false;
+		}
+
+		async function init() {
+			if (!dataset) return;
+			
+			try {
+				let layout = await autodetect();
+				if (!layout) return;
+				
+				let normals = await autodetectNormals(layout);
+				var lime = new OpenLIME.Viewer('#openlime', { background:'black' });
+
+				let layer = new OpenLIME.Layer({ 
+					layout: layout, 
+					type: 'rti',
+					url: 'rti_files/' + dataset + '/info.json',
+					normals: normals
+				});
+
+				lime.canvas.addLayer('RTI', layer); 
+				OpenLIME.Skin.setUrl('openlime/skin.svg');
+				let ui = new OpenLIME.UIBasic(lime, { 
+					skin: 'openlime/skin.svg', 
+					showLightDirections: true 
+				});
+				ui.actions.light.active = true;
+				ui.actions.layers.display = true;
+				lime.camera.maxFixedZoom = 1;
+				window.lime = lime;
+			} catch (error) {
+				document.getElementById('error').style.display = 'block';
+				document.getElementById('error').innerText = 'Error initializing viewer: ' + error.message;
+			}
+		}
+
+		init();
+	</script>
+</html>
