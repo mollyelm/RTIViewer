@@ -7,16 +7,28 @@ A plugin for displaying Reflectance Transformation Imaging (RTI) datasets in Ome
 - **Upload RTI Datasets**: Upload ZIP files containing RTI image sets through the admin interface
 - **Configurable Viewer Dimensions**: Set default width and height for embedded viewers
 - **Flexible Embedding**: Use default dimensions or specify custom sizes for each viewer
-- **Dataset Management**: View, test, and delete RTI datasets from the admin panel
+- **Dataset Management**: View, upload, and delete RTI datasets from the admin panel
 - **Manual Upload Support**: Instructions for uploading large datasets that exceed server limits
-- **Multiple RTI Formats**: Supports tarzoom, deepzoom, itarzoom, and standard image formats
 - **Interactive Viewing**: Full RTI functionality with light direction control via OpenLIME
 
-## Requirements
+## Server Requirements
 
 - Omeka Classic 2.x or higher
 - PHP 5.6 or higher with ZIP extension enabled
-- Web server with sufficient upload limits for your RTI datasets
+- Web server with sufficient storage space for your RTI data sets
+
+## RTI Format Requirements
+
+This plugin requires RTI datasets in **HSH (Hemispherical Harmonics)** format.
+
+When exporting from Relight:
+1. Go to Export → RTI
+2. Select "HSH" as the format
+3. Choose JPEG for web compatibility
+4. Export all files
+5. ZIP the exported folder for upload
+
+**Note**: PTM, RBF, and other RTI formats are not currently supported.
 
 ## Installation
 
