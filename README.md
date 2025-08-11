@@ -33,7 +33,7 @@ When exporting from Relight:
 ## Installation
 
 1. Download the plugin:
-   - Click the green `<> Code` button on GitHub
+   - Click the `<> Code` button on GitHub
    - Select "Download ZIP"
    - Extract the downloaded file
 
@@ -162,11 +162,3 @@ Or contact your hosting provider for assistance.
 - Created by Molly Moulton @ UMD Michelle Smith Collaboratory
 - Uses [OpenLIME](https://openlime.githib.io/) for RTI visualization
 - Built for Omeka Classic
-
-## License
-
-[Your chosen license]
-
-## Support
-
-[Your support contact information or link to issues page]
