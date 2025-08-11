@@ -71,6 +71,15 @@ if (isset($_GET['error'])) {
                         <li><?php echo __('Access your Omeka installation directory on your server'); ?></li>
                         <li><?php echo __('Navigate to:'); ?> <code>/plugins/RTIViewer/rti_files/</code></li>
                         <li><?php echo __('Upload your RTI folder directly into '); ?> <code>rti_files</code></li>
+                            <ul style="margin: 5px 0;">
+                                <li><?php echo __('For your folder name:'); ?></li>
+                                    <ul style="margin: 5px 0;">
+                                        <li><?php echo __('Use ONLY: letters, numbers, dots (.), dashes (-), underscores (_)'); ?></li>
+                                        <li><?php echo __('NO spaces or special characters'); ?></li>
+                                        <li><?php echo __('Valid examples:'); ?> <code>artifact_001</code>,  <code>C.1.85.1</code>,  <code>roman-coin-front</code></li>
+                                    </ul>
+                            </ul>
+
                         <li><?php echo __('Refresh this page to see your dataset in the list above'); ?></li>
                     </ol>
                     <p style="margin-bottom: 0;"><em><?php echo __('Note: You can also ask your hosting provider to increase the PHP upload limit.'); ?></em></p>
